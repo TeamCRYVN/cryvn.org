@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CRYVN Terminal Style</title>
+<style>
+  body {
+    background-color: #000000;
+    color: #00ff41; 
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 1.5rem;
+    line-height: 1.4;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      font-size: 0.85rem;
+      padding: 1rem;
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 6px #00ff41aa;
+    letter-spacing: 0.1em;
+  }
+
+  p {
+    margin: 0.4rem 0;
+  }
+
+  strong {
+    color: #00ff99;
+  }
+
+  em {
+    font-style: italic;
+    color: #008f11;
+  }
+
+  a {
+    color: #00ffaa;
+    text-decoration: none;
+    border-bottom: 1px dotted #00ffaa;
+    transition: color 0.3s ease;
+  }
+  a:hover,
+  a:focus {
+    color: #00ffdd;
+    border-bottom: 1px solid #00ffdd;
+  }
+
+  code {
+    background-color: #003300;
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #00ff00;
+    box-shadow: 0 0 5px #00ff00aa;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  code.status {
+    animation: pulse 1.2s infinite;
+  }
+
+  p > span.emoji {
+    margin-right: 0.4em;
+  }
+</style>
+</head>
+<body>
+  <h1>CRYVN [ SYSTEM BOOTING ]</h1>
+  <p><strong>Création. Réseau. Virtuel. Nexus.</strong></p>
+  <p>Infrastructure en ligne. Communautés interconnectées. Systèmes actifs en fond.</p>
+  <p><code class="status">status: standby_01</code> <br> <em>Initialisation en cours...</em></p>
+  <p><span class="emoji">📡</span>Connexion au Nexus prévue prochainement.</p>
+  <p>➡️ <a href="#soon" target="_blank" rel="noopener noreferrer">Accès anticipé via Discord</a></p>
+</body>
+</html>
